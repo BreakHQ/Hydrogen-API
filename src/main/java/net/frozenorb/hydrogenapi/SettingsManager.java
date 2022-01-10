@@ -23,14 +23,14 @@ public class SettingsManager {
                 BufferedWriter writer = new BufferedWriter(new FileWriter(file));
                 writer.write("redis-host::localhost");
                 writer.newLine();
-                writer.write("ban-message::&cYour account has been suspended from the VeltPvP Network. %newline%%newline%Appeal at https://veltpvp.com/support");
+                writer.write("ban-message::&cYour account has been suspended from the MineHQ Network. %newline%%newline%Appeal at https://minehq.com/appeal");
                 writer.newLine();
-                writer.write("blacklist-message::&cYour account has been blacklisted from the VeltPvP Network. %newline%%newline%This type of punishment cannot be appealed.");
+                writer.write("blacklist-message::&cYour account has been blacklisted from the MineHQ Network. %newline%%newline%This type of punishment cannot be appealed.");
                 writer.newLine();
                 writer.write("log-ips::false");
                 writer.close();
 
-                System.out.println("Edit the config.txt file with details to your redis & database server then restart the web api.");
+                System.out.println("Edit the settings.txt file with details to your redis & database server then restart the web api.");
 
                 return false;
             }
